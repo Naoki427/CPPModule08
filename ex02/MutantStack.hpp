@@ -15,7 +15,7 @@ public:
 		*this = origin;
 	};
 	MutantStack& operator = (const MutantStack &origin) {
-		if (*this != origin)
+		if (this != &origin)
 			*this = origin;
 		return (*this);
 	};
